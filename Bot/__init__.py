@@ -13,13 +13,13 @@ LOG.setLevel(level=logging.INFO)
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0',}
 
-API_ID = int(environ.get('API_ID', 45647)) #API ID
-API_HASH = environ.get('API_HASH', 'Your Api Id') #API HASH
-BOT_TOKEN = environ.get('BOT_TOKEN', 'Your Bot Token') #BOT TOKEN
-DATABASE_URL = environ.get('DATABASE_URL', 'Your MongoDb') #MONGO DB
-OWNER_ID = int(environ.get('OWNER_ID', None)) #OWNER ID
-MAIN_CHANNEL = int(environ.get('MAIN_CHANNEL', None))#YOUR MAIN CHANNEL ID
-ARCHIVE_CHANNEL = int(environ.get('ARCHIVE_CHANNEL', None))#YOUR ARCHIVE CHANNEL
-MESSAGE_ID = int(environ.get('MESSAGE_ID', None)) #SUB CHANNEL STATUS ID
+API_ID = int(environ.get('API_ID', 6435225)) #API ID
+API_HASH = environ.get('API_HASH', '4e984ea35f854762dcde906dce426c2d') #API HASH
+BOT_TOKEN = environ.get('BOT_TOKEN', '5527818445:AAE7TLprBfyUuQvYZsaOesQ0F-9C2sl2I80') #BOT TOKEN
+DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://arnavgupta0078:arnav@cluster3301.ojyvd.mongodb.net/retryWrites=true&w=majority') #MONGO DB
+OWNER_ID = "" #OWNER ID
+MAIN_CHANNEL = int(environ.get('MAIN_CHANNEL', "-1002386259040"))#YOUR MAIN CHANNEL ID
+ARCHIVE_CHANNEL = int(environ.get('ARCHIVE_CHANNEL', "-1002386259040"))#YOUR ARCHIVE CHANNEL
+MESSAGE_ID = int(environ.get('MESSAGE_ID', "2")) #SUB CHANNEL STATUS ID
 
 soheru = Client('SoheruBots', api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN, plugins=dict(root="Bot/plugins"))

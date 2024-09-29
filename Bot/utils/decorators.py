@@ -11,7 +11,7 @@ async def upload_file(file, chat, thumb=None, caption=None):
 
 async def message_status(text):
     try:
-        await soheru.edit_message_text(MAIN_CHANNEL, message_id=MESSAGE_ID, text=text, reply_markup=IKM([[IKB(text_replace('Dev'), url='https://t.me/AboutMeSk/168'), IKB(text_replace('Files'), url=f"https://t.me/Auto_Airing_Animes")]]))
+        await soheru.edit_message_text(MAIN_CHANNEL, message_id=MESSAGE_ID, text=text, reply_markup=IKM([[IKB(text_replace('Dev'), url='https://t.me/ghost_kun'), IKB(text_replace('Files'), url=f"https://t.me/AnimePlaza_str")]]))
     except Exception as e:
         LOG.error(f'Senpai Error :{e}')
         pass      

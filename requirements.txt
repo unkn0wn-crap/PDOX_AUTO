@@ -1,6 +1,6 @@
 asyncio 
 pyrogram
-tgcrypto
+#tgcrypto
 requests
 bs4
 pymongo

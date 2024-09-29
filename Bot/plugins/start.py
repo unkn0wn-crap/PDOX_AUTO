@@ -22,15 +22,13 @@ LINK = [
 BUTTONS_DEV = IKM(
     [
         [
-            IKB('ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/sohailkhan_indianime'),
-            IKB('ɢɪᴛʜᴜʙ', url = 'https://github.com/soheru')
+            IKB('Dead', url='https://t.me/ghost_kun'),
+            IKB('AnimePlaza', url = 'https://t.me/AnimePlaza_str')
         ],
         [
             IKB('ᴡᴇʙsɪᴛᴇ', url='https://soheru.in'),
-            IKB('ᴄʜᴀɴɴᴇʟ', url='https://t.me/aboutmesk'),
         ],
         [
-            IKB('ɪɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/soherusan'),
             IKB('ʜᴏᴍᴇ', 'call_start_or_go_back')
         ]
     ]
@@ -58,7 +56,7 @@ BUTTONSS = IKM(
 async def call_callback(client:soheru, callback_query):
     if 'about_dev' in callback_query.data:
         text = f'Hello `{callback_query.from_user.first_name}`,\n\n'
-        text += "I'm Sohail\nTo connect with me, Check Below Buttons"
+        text += "I'm a Auto Uploading bKt-Chan\nTo connect with me, Check Below Buttons"
         await callback_query.message.edit(text_replace(text),reply_markup=BUTTONS_DEV)
         
     elif 'start_or_go_back' in callback_query.data:

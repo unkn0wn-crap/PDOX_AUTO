@@ -2,7 +2,7 @@ from pymongo import MongoClient
 from Bot import DATABASE_URL, OWNER_ID
 
 clientdb = MongoClient(DATABASE_URL)
-typedb = clientdb['SoheruGroup']
+typedb = clientdb['AnimePlaza']
 users = typedb['users']
 channels = typedb['channels']
 globaldb = typedb['globaldb']
