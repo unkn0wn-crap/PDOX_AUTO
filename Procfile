@@ -1,1 +1,1 @@
-worker: python3 -m soheru
+worker: python3 -m Bot
