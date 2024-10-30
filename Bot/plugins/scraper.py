@@ -160,7 +160,7 @@ async def process():
             new(anime_title, episode, episode_session)   
              
 scheduler = AsyncIOScheduler()
-scheduler.add_job(process, "interval", seconds=60)
+scheduler.add_job(process, "interval", seconds=60, timezone=pytz.timezone("Asia/Kolkata"))
 scheduler.start()        
         
                     
