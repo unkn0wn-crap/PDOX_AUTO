@@ -26,9 +26,8 @@ async def main():
     startup()  # Call startup without await if it’s synchronous
     print('[×] - INFO - BOT STARTED')
 
-    # Run the event loop forever
-    loop = asyncio.get_running_loop()
-    await loop.run_forever()
+    # Keep the bot running (no explicit call to run_forever)
+    await asyncio.Event().wait()  # This keeps the main function running indefinitely
 
 if __name__ == "__main__":
     asyncio.run(main())
