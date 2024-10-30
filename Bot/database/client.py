@@ -12,7 +12,7 @@ def startup():
     x = globaldb.find_one({'setup_done':True})
     if x is not None:
         return 
-    fileformat('[IA] [episode - title] [resolution] [Sub].mkv')
+    fileformat('[@AnimePlaza_STR] [episode - title] [resolution] [Sub].mkv')
     globaldb.insert_one({'resolution':'360p', 'auth':bool(True)})
     globaldb.insert_one({'resolution':'480p', 'auth':bool(True)})
     globaldb.insert_one({'resolution':'720p', 'auth':bool(True)})
